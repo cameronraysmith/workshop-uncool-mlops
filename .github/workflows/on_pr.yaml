@@ -28,7 +28,7 @@ jobs:
           dvc pull --force
       - name: Run DVC pipeline
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
         run: |
           dvc repro
@@ -44,7 +44,7 @@ jobs:
           cml pr --rebase "dvc.lock" "params.yaml" "outs/*.json" "outs/eval"  "outs/train_metrics"
       - name: CML Report
         env:
-          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           echo "## Metrics & Params" >> report.md
           dvc exp diff main --show-md >> report.md
