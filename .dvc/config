@@ -1,0 +1,5 @@
+[core]
+    remote = drive
+    analytics = false
+['remote "drive"']
+    url = gdrive://13WxonYDNoqAGu04H5cCEppHXRZwoYbRs/dvcstore
