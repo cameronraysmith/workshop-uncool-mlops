@@ -1,0 +1,28 @@
+name: cml
+channels:
+  - conda-forge
+  - pytorch
+  - nodefaults
+dependencies:
+  - conda-forge::python=3.9
+  - conda-forge::pip
+  - conda-forge::pytorch[version='>=1.10.0']
+  - conda-forge::torchmetrics=0.11.0
+  - conda-forge::fsspec[version='<2023']
+  - conda-forge::dvc[version='>2.30']
+  - conda-forge::dvc-gdrive
+  - conda-forge::dvclive=0.12.1 # major update to 1.0 after 10/20/2022 breaks train.py
+  - conda-forge::fire
+  - conda-forge::loguru
+  - conda-forge::pygithub
+  - conda-forge::scikit-learn
+  - conda-forge::datasets
+  - conda-forge::transformers
+  - conda-forge::pytest
+  # - conda-forge::mkl[version='<2022'] # mac intel compat: https://stackoverflow.com/a/71640311/446907
+  # - pip:
+  #   - hydra-colorlog==1.2.0
+  #   - hydra-optuna-sweeper==1.2.0
+  #   - pyrootutils==1.0.4
+  #   - pytorch-lightning==1.8.3
+# prefix: /usr/local/Caskroom/mambaforge/base/envs/cml
