@@ -1,17 +1,17 @@
 {
-    "step": 8,
+    "step": 15,
     "eval": {
-        "loss": 0.9101914167404175,
-        "accuracy": 0.6,
-        "runtime": 0.1126,
-        "samples_per_second": 88.847,
-        "steps_per_second": 8.885
+        "loss": 0.7166584134101868,
+        "accuracy": 0.7,
+        "runtime": 0.0312,
+        "samples_per_second": 320.242,
+        "steps_per_second": 32.024
     },
-    "epoch": 8.0,
+    "epoch": 15.0,
     "train": {
-        "runtime": 27.4224,
-        "samples_per_second": 25.672,
-        "steps_per_second": 3.209,
-        "loss": 0.9281454086303711
+        "runtime": 29.6771,
+        "samples_per_second": 44.479,
+        "steps_per_second": 5.56,
+        "loss": 0.5901219223484848
     }
 }

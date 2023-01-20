@@ -1,11 +1,11 @@
 [
     {
         "actual": "plots",
-        "predicted": "experiments"
+        "predicted": "plots"
     },
     {
         "actual": "data-sync",
-        "predicted": "experiments"
+        "predicted": "plots"
     },
     {
         "actual": "experiments",
@@ -13,7 +13,7 @@
     },
     {
         "actual": "data-sync",
-        "predicted": "experiments"
+        "predicted": "plots"
     },
     {
         "actual": "experiments",
